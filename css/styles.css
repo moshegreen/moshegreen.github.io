@@ -245,6 +245,88 @@ body {
   }
 }
 
+.partners {
+  background: white;
+  border-radius: 24px;
+  box-shadow: 0 15px 45px rgba(17, 63, 103, 0.1);
+  padding: 2.75rem 2.5rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.partners__header h2 {
+  margin: 0 0 0.75rem;
+  font-size: clamp(1.8rem, 2vw + 1.25rem, 2.4rem);
+  color: var(--color-primary);
+}
+
+.partners__header p {
+  margin: 0;
+  max-width: 60ch;
+  color: var(--color-muted);
+  font-size: 1.05rem;
+}
+
+.partners__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.75rem;
+}
+
+.partner-card {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 1.5rem;
+  padding: 1.75rem;
+  border-radius: 20px;
+  border: 1px solid rgba(11, 44, 72, 0.08);
+  background: linear-gradient(135deg, rgba(246, 247, 251, 0.6), rgba(255, 255, 255, 0.95));
+  box-shadow: 0 12px 30px rgba(17, 63, 103, 0.12);
+}
+
+.partner-card__media {
+  margin: 0;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(17, 63, 103, 0.2);
+}
+
+.partner-card__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.partner-card__body h3 {
+  margin: 0 0 0.35rem;
+  color: var(--color-primary);
+  font-size: 1.4rem;
+}
+
+.partner-card__title {
+  margin: 0 0 0.85rem;
+  color: var(--color-secondary);
+  font-weight: 600;
+}
+
+.partner-card__body p {
+  margin: 0 0 1rem;
+}
+
+.partner-card__body ul {
+  margin: 0;
+  padding-right: 1.25rem;
+  color: var(--color-muted);
+  display: grid;
+  gap: 0.5rem;
+}
+
+.partner-card__body li::marker {
+  color: var(--color-accent);
+}
+
 .intro-columns {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -352,6 +434,10 @@ body {
     position: static;
     order: 1;
   }
+
+  .partner-card {
+    grid-template-columns: 180px 1fr;
+  }
 }
 
 @media (max-width: 768px) {
@@ -386,6 +472,23 @@ body {
     grid-template-columns: 1fr;
   }
 
+  .partners {
+    padding: 2.25rem 1.5rem;
+  }
+
+  .partners__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .partner-card {
+    grid-template-columns: 1fr;
+  }
+
+  .partner-card__media {
+    justify-self: center;
+    max-width: 320px;
+  }
+
   .hero__inner {
     padding: 2.25rem;
   }
@@ -402,5 +505,9 @@ body {
 
   .hero__inner p {
     font-size: 1rem;
+  }
+
+  .partners {
+    padding: 1.75rem 1.25rem;
   }
 }
