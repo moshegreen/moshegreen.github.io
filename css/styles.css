@@ -74,28 +74,32 @@ body {
   font-size: 0.95rem;
 }
 
-.language-nav {
-  display: flex;
+.language-switcher {
+  display: inline-flex;
   gap: 0.75rem;
   font-size: 0.95rem;
 }
 
-.language-nav a {
+.language-switcher button {
   color: var(--color-muted);
-  text-decoration: none;
-  padding: 0.35rem 0.75rem;
+  background: white;
+  border: 1px solid rgba(17, 63, 103, 0.25);
+  padding: 0.4rem 0.85rem;
   border-radius: 999px;
-  border: 1px solid transparent;
+  font: inherit;
+  cursor: pointer;
   transition: all 0.2s ease;
 }
 
-.language-nav a:hover,
-.language-nav a:focus {
+.language-switcher button:hover,
+.language-switcher button:focus {
   color: var(--color-primary);
-  border-color: rgba(17, 63, 103, 0.25);
+  border-color: var(--color-primary);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(17, 63, 103, 0.12);
 }
 
-.language-nav .active {
+.language-switcher .is-active {
   background: var(--color-primary);
   color: white;
   border-color: var(--color-primary);
@@ -329,7 +333,7 @@ body {
 
 .intro-columns {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 1.5rem;
 }
 
@@ -360,6 +364,17 @@ body {
   margin: 0;
   color: var(--color-text);
   font-size: 1rem;
+}
+
+.intro-card a {
+  color: var(--color-secondary);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.intro-card a:hover,
+.intro-card a:focus {
+  color: var(--color-accent);
 }
 
 .intro-card[lang="en"],
