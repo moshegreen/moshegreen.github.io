@@ -399,28 +399,6 @@ body {
   border-color: var(--color-accent);
 }
 
-.flag {
-  width: 36px;
-  height: 24px;
-  display: inline-block;
-  border-radius: 4px;
-  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.1);
-  background-size: cover;
-  background-position: center;
-}
-
-.flag--il {
-  background-image: url('https://upload.wikimedia.org/wikipedia/commons/d/d4/Flag_of_Israel.svg');
-}
-
-.flag--us {
-  background-image: url('https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg');
-}
-
-.flag--fr {
-  background-image: url('https://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg');
-}
-
 .site-footer {
   background: #0b1f33;
   color: rgba(255, 255, 255, 0.8);
