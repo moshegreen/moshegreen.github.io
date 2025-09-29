@@ -9,3 +9,6 @@ This repository contains a static recreation of the [Levin Fisher](https://www.l
 - `js/main.js` – small script for toggling the navigation menu on mobile.
 
 To preview locally, open `index.html` in your browser.
+
+## Content Integrity
+This clone intentionally preserves the original text and layout from the Levin Fisher site without modification.

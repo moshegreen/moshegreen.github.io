@@ -220,15 +220,15 @@ body {
 }
 
 .hero__slide--one {
-  background-image: url('https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1600&q=80');
+  background-image: url('https://www.levin-fisher.com/tmp/1W1660H700Q80_bd54ad3de8fbe71906c2fcd4ff5cbbbd.jpg');
 }
 
 .hero__slide--two {
-  background-image: url('https://images.unsplash.com/photo-1521790945508-bf2a36314e85?auto=format&fit=crop&w=1600&q=80');
+  background-image: url('https://www.levin-fisher.com/tmp/2W1660H700Q80_4febfa0f8ac605442d1be0fd723b08cf.jpg');
 }
 
 .hero__slide--three {
-  background-image: url('https://images.unsplash.com/photo-1464037866556-6812c9d1c72e?auto=format&fit=crop&w=1600&q=80');
+  background-image: url('https://www.levin-fisher.com/tmp/3W1660H700Q80_4303bde90eca4906f41e7c09e7ae8409.jpg');
 }
 
 @keyframes heroSlide {
